@@ -833,7 +833,7 @@ impl super::PrivateCapabilities {
                     .max_dynamic_uniform_buffers_per_pipeline_layout,
                 max_dynamic_storage_buffers_per_pipeline_layout: base
                     .max_dynamic_storage_buffers_per_pipeline_layout,
-                max_sampled_textures_per_shader_stage: base.max_sampled_textures_per_shader_stage,
+                max_sampled_textures_per_shader_stage: self.max_textures_per_stage,
                 max_samplers_per_shader_stage: self.max_samplers_per_stage,
                 max_storage_buffers_per_shader_stage: base.max_storage_buffers_per_shader_stage,
                 max_storage_textures_per_shader_stage: base.max_storage_textures_per_shader_stage,
