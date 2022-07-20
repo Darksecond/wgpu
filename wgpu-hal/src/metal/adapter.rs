@@ -617,7 +617,7 @@ impl super::PrivateCapabilities {
             format_bgr10a2_no_write: !Self::supports_any(device, BGR10A2_ALL),
             max_buffers_per_stage: 31,
             max_textures_per_stage: if os_is_mac {
-                128 // On macOS, minimun value is 128
+                1000000 // On macOS, minimun value is 128
             } else if device.supports_feature_set(MTLFeatureSet::iOS_GPUFamily4_v1) {
                 96
             } else {
